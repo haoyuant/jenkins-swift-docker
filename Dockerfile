@@ -1,4 +1,4 @@
-FROM swift:xenial
+FROM swift:bionic
 
 RUN apt-get update && apt-get -y install wget
 

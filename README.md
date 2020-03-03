@@ -12,6 +12,13 @@ This docker file will create a Jenkins image with the swift compiler. Use it to 
 `$ docker run -p {AGENT_PORT:EXPOSE_PORT} --security-opt seccomp=unconfined -it --mount src={YOUR_LOCAL_FOLDER},target=/.jenkins,type=bind {YOUR_IMAGE_NAME}`
 
 ## Example
+To use this image, you can either get it from Docker Hub or manually build the Dockerfile.
+### Use Docker Image
+```
+$ docker pull papikana/jenkins-swift
+$ docker run -p 80:8080 --security-opt seccomp=unconfined -it --mount src=$PWD/jenkins,target=/.jenkins,type=bind ht/jenkins-swift
+```
+### Use Dockerfile
 ```
 $ cd jenkins-swift-docker
 $ docker build . -t ht/jenkins-swift

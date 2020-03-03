@@ -2,7 +2,10 @@
 
 This docker file will create a Jenkins image with the swift compiler. Use it to create your Jenkins build server for pure Swift projects🐦🐦🐦
 
-## Build Image
+## Get Docker Image
+`$ docker pull papikana/jenkins-swift`
+
+## Build Image from Dockerfile
 `$ docker build . -t {YOUR_IMAGE_NAME}`
 
 ## Run and Mount Container

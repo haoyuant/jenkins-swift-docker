@@ -1,5 +1,7 @@
 # Jenkins-Swift-Docker
 
+This docker file will create an 
+
 ## Build Image
 `$ docker build . -t ht/jenkins-swift`
 
